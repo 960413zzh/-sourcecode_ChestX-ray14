@@ -31,9 +31,9 @@ from validation import epochVal, epochVal_metrics
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--root_path', type=str, default="D:/Dataset_01/ChestX-ray14/images", help='dataset root dir')
-parser.add_argument('--csv_file_train', type=str, default="C:/Users/30812/Desktop/source code of ChestX-ray14/SRC-MT-master/data/chest-xray/train.csv", help='training set csv file')
-parser.add_argument('--csv_file_val', type=str, default='C:/Users/30812/Desktop/source code of ChestX-ray14/SRC-MT-master/data/chest-xray/val.csv', help='validation set csv file')
-parser.add_argument('--csv_file_test', type=str, default='C:/Users/30812/Desktop/source code of ChestX-ray14/SRC-MT-master/data/chest-xray/test.csv', help='testing set csv file')
+parser.add_argument('--csv_file_train', type=str, default="./sourcecode_ChestX-ray14/data/chest-xray/train.csv", help='training set csv file')
+parser.add_argument('--csv_file_val', type=str, default='./sourcecode_ChestX-ray14/data/chest-xray/val.csv', help='validation set csv file')
+parser.add_argument('--csv_file_test', type=str, default='./sourcecode_ChestX-ray14/data/chest-xray/test.csv', help='testing set csv file')
 parser.add_argument('--exp', type=str,  default='xxxx', help='model_name')
 parser.add_argument('--epochs', type=int,  default=100, help='maximum epoch number to train')
 parser.add_argument('--batch_size', type=int, default=2, help='batch_size per gpu')
